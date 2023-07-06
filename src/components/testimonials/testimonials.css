@@ -19,6 +19,11 @@
     margin: 0 auto 1rem;
     border-radius: 50%;
     border: 0.4rem solid var(--color-primary-variant);
+    transition: var(--transition);
+}
+
+.client_avatar:hover{
+  width: 8rem;
 }
 
 .testimonial {
@@ -36,6 +41,14 @@
     width: 80%;
     margin: 0.8rem auto 0;
     
+}
+
+.clientNameHyperLink{
+  color: white;
+}
+
+.clientNameHyperLink:hover{
+  color: var(--color-primary);
 }
 
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) ============== */

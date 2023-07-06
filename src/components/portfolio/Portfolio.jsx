@@ -18,10 +18,18 @@ const Portfolio = () => {
 
           <h3>SheyHealthy</h3>
           <div className="portfolio_item-cta">
-            <a href="#" className="btn" target="_blank">
+            <a
+              href="https://github.com/harshalyallewar/shey-healthy"
+              className="btn"
+              target="_blank"
+            >
               Github
             </a>
-            <a href="" className="btn btn-primary" target="_blank">
+            <a
+              href="https://sheyhealthy.netlify.app/"
+              className="btn btn-primary"
+              target="_blank"
+            >
               Live Demo
             </a>
           </div>
@@ -33,10 +41,18 @@ const Portfolio = () => {
 
           <h3>Ecomm-Dashboard</h3>
           <div className="portfolio_item-cta">
-            <a href="#" className="btn" target="_blank">
+            <a
+              href="https://github.com/harshalyallewar/ecomm-dashboard-frontend"
+              className="btn"
+              target="_blank"
+            >
               Github
             </a>
-            <a href="" className="btn btn-primary" target="_blank">
+            <a
+              href="https://ecomm-dashboard-frontend.netlify.app/"
+              className="btn btn-primary"
+              target="_blank"
+            >
               Live Demo
             </a>
           </div>
@@ -48,10 +64,14 @@ const Portfolio = () => {
 
           <h3>Portfolio site</h3>
           <div className="portfolio_item-cta">
-            <a href="#" className="btn" target="_blank">
+            <a
+              href="https://github.com/harshalyallewar/portfoliowebsite"
+              className="btn"
+              target="_blank"
+            >
               Github
             </a>
-            <a href="" className="btn btn-primary" target="_blank">
+            <a href="#" className="btn btn-primary" target="_blank">
               Live Demo
             </a>
           </div>

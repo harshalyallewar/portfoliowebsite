@@ -5,12 +5,21 @@ import {BsInstagram} from 'react-icons/bs'
 
 const HeaderSocials = () => {
   return (
-    <div className='header_socials'> 
-        <a href="https://linkedin.com" target="_blank"><BsLinkedin/></a>
-        <a href="https://github.com" target="_blank"><FaGithub/></a>
-        <a href="https://instagram.com" target="_blank"><BsInstagram/></a>
+    <div className="header_socials">
+      <a
+        href="https://www.linkedin.com/in/harshal-yallewar-41232a280/"
+        target="_blank"
+      >
+        <BsLinkedin />
+      </a>
+      <a href="https://github.com/harshalyallewar" target="_blank">
+        <FaGithub />
+      </a>
+      <a href="https://www.instagram.com/harshal_yallewar/" target="_blank">
+        <BsInstagram />
+      </a>
     </div>
-  )
+  );
 }
 
 export default HeaderSocials

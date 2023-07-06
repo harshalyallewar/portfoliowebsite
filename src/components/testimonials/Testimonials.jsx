@@ -1,8 +1,9 @@
 import React from 'react'
 import avatar from '../../assets/avatar.png'
+import himanshu from "../../assets/himanshu.jpg";
 import './testimonials.css'
 
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation, Pagination, Autoplay, A11y } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,31 +11,27 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
 import "swiper/css/scrollbar";
 
 const Testimonials = () => {
 
   const data = [
-    
     {
-    avatar: avatar,
-    name:"Harshal Yallewar",
-    review:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam perspiciatis ad impedit quae fugiat. In temporibus nisi reprehenderit consequatur non distinctio assumenda adipisci nihil veritatis. Unde fugiat quasi voluptate!"
-  },
+      avatar: himanshu,
+      name: "Himanshu Agarkar",
+      href: "https://www.linkedin.com/in/agarkarh/",
+      review:
+        "Having worked closely with Harshal on multiple projects, I can confidently attest to his exceptional skills, determination, and dedication to achieving a specific goal. His deep knowledge of DSA and Full Stack Development Technologies combined with the thrust of curiosity and continuous acquiring of novel skills sets him apart.",
+    },
     {
-    avatar: avatar,
-    name:"Harshal Yallewar",
-    review:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam perspiciatis ad impedit quae fugiat. In temporibus nisi reprehenderit consequatur non distinctio assumenda adipisci nihil veritatis. Unde fugiat quasi voluptate!"
-  },
-    {
-    avatar: avatar,
-    name:"Harshal Yallewar",
-    review:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam perspiciatis ad impedit quae fugiat. In temporibus nisi reprehenderit consequatur non distinctio assumenda adipisci nihil veritatis. Unde fugiat quasi voluptate!"
-  },
-
-
-
-]
+      avatar: avatar,
+      name: "Tushar Charde",
+      href: "https://www.linkedin.com/in/tushar-charde-99a548247/",
+      review:
+        "Harshal is incredibly dedicated and passionate about his goals. His clarity of thought makes him a genuine person, and his commitment to learning anything new is remarkable. With his skills and determination, he is undoubtedly an excellent developer",
+    },
+  ];
 
   return (
     <section id="testimonials">
@@ -43,10 +40,11 @@ const Testimonials = () => {
 
       <Swiper
         className="container testimonials_container"
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
         spaceBetween={40}
         slidesPerView={1}
+        autoplay={{ delay: 5000 }}
       >
         {data.map((review) => {
           return (
@@ -55,7 +53,13 @@ const Testimonials = () => {
                 <img src={review.avatar} alt="" />
               </div>
 
-              <h5 className="client_name">{review.name}</h5>
+              <a
+                className="clientNameHyperLink"
+                href={review.href}
+                target="_blank"
+              >
+                <h5 className="client_name">{review.name}</h5>
+              </a>
               <small className="client_review">{review.review}</small>
             </SwiperSlide>
           );
