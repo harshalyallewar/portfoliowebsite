@@ -12,7 +12,7 @@ header {
 
 .myname{
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid var(--color-primary); /* The typwriter cursor */
+  border-right: .15em solid transparent; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
@@ -20,7 +20,7 @@ header {
 
   animation: 
     typing 2s steps(20) ,
-    blink-caret .75s step-start;
+    blink-caret 0.75s step-start;
 }
 
 .namecontainer {
@@ -29,8 +29,13 @@ header {
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width:100% }
+  from { width: 0 ;
+ /* border: var(--color-primary); */
+}
+  to { width:100%;
+border-color: var(--color-primary); }
+
+  
 }
 
 /* The typewriter cursor effect */
@@ -38,9 +43,7 @@ header {
   from { border-color: transparent; }
   to { border-color: var(--color-primary); }
 
-  0%, 100% {
-    border-color: transparent;
-  }
+ 
 }
 
 

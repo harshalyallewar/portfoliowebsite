@@ -87,6 +87,10 @@
     .about_container p {
         margin: 1rem 0 1.5rem;
     }
+
+    .about_cards {
+        margin-bottom: 3rem;
+    }
 }
 
 /* =========== MEDIA QUERIES (SMALL DEVICES) ============== */
@@ -100,6 +104,8 @@
     .about_cards {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+        margin-bottom: 3.5rem;
+
     }
 
     .about_content {
