@@ -5,6 +5,15 @@ import { BsLinkedin } from "react-icons/bs/";
 import './contact.css'
 
 const Contact = () => {
+
+  const subTheForm = (event)=>{
+    event.preventDefault();
+    console.log(
+      event.target.name.value,'\n',
+      event.target.email.value,'\n',
+      event.target.message.value
+    );
+  }
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -35,13 +44,11 @@ const Contact = () => {
             <BsWhatsapp className="contact_option-icon" />
             <h4>WhatsApp</h4>
             <h5>Direct Inbox</h5>
-            <a href="#contact" >
-              Send a message
-            </a>
+            <a href="#contact">Send a message</a>
           </article>
         </div>
 
-        <form action="">
+        <form action="" onSubmit={subTheForm}>
           <input
             type="text"
             name="name"
