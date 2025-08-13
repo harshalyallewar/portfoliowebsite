@@ -1,5 +1,5 @@
 import React from "react";
-import ME from "../../assets/ME.png";
+import ME from "../../assets/ME.webp";
 import "./about.css";
 import { FaAward } from "react-icons/fa";
 

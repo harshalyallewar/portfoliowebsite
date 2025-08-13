@@ -4,8 +4,8 @@ const CTA = () => {
   return (
     <div className="cta">
       <a target="_blank"
-        href="https://drive.google.com/file/d/1f3EL_RS8n4-O3ToItJiOLvGyCOHLczqC/view?usp=sharing"
-        className="btn"
+        href="https://JlPOKF.short.gy/harshalresume"
+        className="btn" rel="noreferrer"
       >
         Download CV
       </a>

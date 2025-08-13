@@ -26,8 +26,8 @@ const Testimonials = () => {
     },
     {
       avatar: avatar,
-      name: "Tushar Charde",
-      href: "https://www.linkedin.com/in/tushar-charde-99a548247/",
+      name: "Rohan Patil",
+      href: "https://www.linkedin.com/in/rohan-d-patil/",
       review:
         "Harshal is incredibly dedicated and passionate about his goals. His clarity of thought makes him a genuine person, and his commitment to learning anything new is remarkable. With his skills and determination, he is undoubtedly an excellent developer",
     },

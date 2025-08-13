@@ -8,11 +8,13 @@ const Contact = () => {
 
   const subTheForm = (event)=>{
     event.preventDefault();
-    console.log(
-      event.target.name.value,'\n',
-      event.target.email.value,'\n',
-      event.target.message.value
-    );
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const message = event.target.message.value;
+    const subject = encodeURIComponent(`Message from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage:\n${message}`);
+    const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=harshalyallewar2@gmail.com&su=${subject}&body=${body}`;
+    window.open(gmailURL, '_blank'); 
   }
   return (
     <section id="contact">
