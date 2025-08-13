@@ -2,7 +2,7 @@ import React from 'react'
 import './portfolio.css'
 import jpg1 from '../../assets/jpg1.jpg'
 import sheyhealthy from "../../assets/sheyhealthy.jpg";
-import ecommdashboard from "../../assets/ecommdashboard.jpg";
+import ecommdashboard from "../../assets/ecommdashboard.avif";
 import portfoliowebsite from "../../assets/portfoliowebsite.jpg";
 
 const Portfolio = () => {
